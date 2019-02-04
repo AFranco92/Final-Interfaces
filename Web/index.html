@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/hover.css">
@@ -11,17 +13,20 @@
 		<title>GameCenter</title>
 	</head>
 	<body>
-		<header>
-			<nav class="navbar">
-				<div>
-					<a class="tohome" href=""><img class="gclogo" src="images/gclogo.png"></a>
-					<input type="text" class="form-control search" placeholder="Buscar juego...">
-					<button type="submit" class="btn btn-primary filters">Filtros</button>
-					<img class="useravatar toprofileav" src="images/useravatar.png">
-		  			<a class="logout" href=""><img class="shutdown" src="images/shutdown.png"></a>
-	  			</div>
-			</nav>
-		</header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		  <a class="navbar-brand tohome" href=""><img class="gclogo" src="images/gclogo.png"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		        <form class="form-inline">
+    			<input class="form-control mr-sm-2 search" type="search" placeholder="Buscar juego ..." aria-label="Search">
+    			<button class="btn btn-outline-info my-2 my-sm-0" type="submit">Filtros</button>
+  			</form>
+		  </div>
+		  <img class="useravatar" src="images/useravatar.png">
+		  <img class="shutdown logout" src="images/shutdown.png">
+		</nav>
 		<div class="fullcontainer">
 			<div class="row">
 				<div class="col-md-8 col-xs-8 col-lg-8">
@@ -90,7 +95,6 @@
 			<img class="twlogo" src="images/twlogo.png">
 			<img class="iglogo" src="images/instlogo.png">
 			<img class="fblogo" src="images/fblogo.png">
-			<i class="far fa-copyright"></i>
 			<p class="copyright">Copyright. All rights reserved.</p>
 		</footer>
 		<script type="text/javascript" src="js/librerias/codebird.js"></script>

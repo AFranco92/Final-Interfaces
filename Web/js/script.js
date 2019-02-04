@@ -2,10 +2,6 @@
 
 		"use strict";
 
-		$(".login").on("click", function() {
-			
-		});
-
 		$(".toprofileav").on("click", function(e) {
 			e.preventDefault();
 			$.ajax({
@@ -38,6 +34,28 @@
 					$(".fullcontainer").html(data);
 					$(".fullcontainer").hide();
 					$(".fullcontainer").fadeIn(250);
+
+					$(".tohome").on("click", function(e) {
+						e.preventDefault();
+						$.ajax({
+							"url" : "./html/home.html",
+							"method" : "GET",
+							"dataType" : "HTML",
+							"success" : function(data) {
+								$(".fullcontainer").html(data);
+								$(".fullcontainer").hide();
+								$(".fullcontainer").fadeIn(250);
+							}
+						});
+						$.ajax({
+							"url" : "./html/navbarcl.html",
+							"method" : "GET",
+							"dataType" : "HTML",
+							"success" : function(data) {
+								$(".navbar").html(data);
+							}
+						});
+					});
 
 					$(".verjuegosl").on("click", function(e) {
 						e.preventDefault();
@@ -78,7 +96,7 @@
 																"url" : "./html/fincomprasl.html",
 																"method" : "GET",
 																"dataType" : "HTML",
-																"success" : function(data) {
+																 "success" : function(data) {
 																	$(".fullcontainer").html(data);
 																	$(".fullcontainer").hide();
 																	$(".fullcontainer").fadeIn(250);
