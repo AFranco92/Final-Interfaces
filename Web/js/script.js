@@ -2,6 +2,28 @@
 
 		"use strict";
 
+		$(".account").click(function() {
+			let X = $(this).attr('id');
+			if(X==1) {
+				$(".submenu").fadeOut(125);
+				$(this).attr('id', '0'); 
+			}
+			else {
+				$(".submenu").fadeIn(125);
+				$(this).attr('id', '1');
+			}
+		});
+		$(".submenu").mouseup(function() {
+			return false
+		});
+		$(".account").mouseup(function() {
+			return false
+		});
+		$(document).mouseup(function() {
+			$(".submenu").fadeOut(125);
+			$(".account").attr('id', '');
+		});
+
 		$(".toprofileav").on("click", function(e) {
 			e.preventDefault();
 			$.ajax({
@@ -205,7 +227,6 @@
 														$(".fullcontainer").html(data);
 														$(".fullcontainer").hide();
 														$(".fullcontainer").fadeIn(250);
-
 														$(".toprofile, .toprofileav").on("click", function(e) {
 															e.preventDefault();
 															$.ajax({
