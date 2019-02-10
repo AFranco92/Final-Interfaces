@@ -112,6 +112,20 @@
 														$(".fullcontainer").hide();
 														$(".fullcontainer").fadeIn(250);
 
+														$(".toregister").on("click", function(e) {
+															e.preventDefault();
+															$.ajax({
+																"url" : "./html/register.html",
+																"method" : "GET",
+																"dataType" : "HTML",
+																"success" : function(data) {
+																	$(".card-body").html(data);
+																	$(".card-body").hide();
+																	$(".card-body").fadeIn(250);
+																}
+															});
+														});
+
 														$(".slbtnconfbuy").on("click", function(e) {
 															e.preventDefault();
 															$.ajax({

@@ -30,6 +30,9 @@ footer {
 .buyxwingimgbuy {
 	margin-top: -14%;
 }
+.buyxwingimgbuysl {
+	margin-top: -13%;
+}
 .buyxwingimgccl2 {
 	margin-top: -3%;
 	height: 350px;
@@ -62,6 +65,9 @@ footer {
 }
 .aebuyimg1buy, .aebuyimg2buy, .aebuyimg3buy, .aebuyimg4buy {
 	margin-top: 30%;
+}
+.aebuyimg1buysl, .aebuyimg2buysl, .aebuyimg3buysl {
+	margin-top: 31%;
 }
 .buyimg1 {
 	margin-left: -50.5%;
@@ -355,7 +361,7 @@ td {
 	height: 330px;
 }
 .buyinfosl {
-	margin-top: -51.7%;
+	margin-top: -42.4%;
 }
 .desc {
 	background-color: #0B2235;
@@ -859,4 +865,42 @@ vertical-align: middle;
 }
 .actualstep {
 	color: #00a4d3;
+}
+h6 {
+	margin-top: -3%;
+	color: white;
+	margin-bottom: 2%;
+}
+.register, .loginform {
+	width: auto;
+	height: auto;
+	border: solid 2px #00a4d3;
+	padding: 1%;
+	color: white;
+	border-radius: 1%;
+}
+.loginform {
+	margin-left: 25%;
+}
+.btnlogin {
+	margin-left: 40%;
+}
+.btnregister {
+	margin-left: 45%;
+}
+.toregister {
+	color: #6099BA;
+}
+.register {
+	padding: 1%;
+	margin-top: -2%;
+}
+.registerh6 {
+	margin-top: 3%;
+}
+.loginform {
+	max-width: 50%;
+}
+.colreg {
+	padding: 1%;
 }
