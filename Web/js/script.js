@@ -112,6 +112,56 @@
 														$(".fullcontainer").hide();
 														$(".fullcontainer").fadeIn(250);
 
+														$(".btnlogin").on("click", function(e) {
+															e.preventDefault();
+															$.ajax({
+																"url" : "./html/navbarcl.html",
+																"method" : "GET",
+																"dataType" : "HTML",
+																"success" : function(data) {
+																	$(".navbar").html(data);
+																}
+															});
+															$.ajax({
+																"url" : "./html/comprasl3.html",
+																"method" : "GET",
+																"dataType" : "HTML",
+																"success" : function(data) {
+																	$(".fullcontainer").html(data);
+																	$(".fullcontainer").hide();
+																	$(".fullcontainer").fadeIn(250);
+
+																	$(".btnconfbuysl").on("click", function(e) {
+																		e.preventDefault();
+																		$.ajax({
+																			"url" : "./html/fincomprasl.html",
+																			"method" : "GET",
+																			"dataType" : "HTML",
+																			"success" : function(data) {
+																				$(".fullcontainer").html(data);
+																				$(".fullcontainer").hide();
+																				$(".fullcontainer").fadeIn(250);
+
+																				$(".toprofile, .toprofileav").on("click", function(e) {
+																					e.preventDefault();
+																					$.ajax({
+																						"url" : "./html/perfil.html",
+																						"method" : "GET",
+																						"dataType" : "HTML",
+																						"success" : function(data) {
+																							$(".fullcontainer").html(data);
+																							$(".fullcontainer").hide();
+																							$(".fullcontainer").fadeIn(250);
+																						}
+																					});
+																				});
+																			}
+																		});
+																	});
+																}
+															});
+														});
+
 														$(".toregister").on("click", function(e) {
 															e.preventDefault();
 															$.ajax({
@@ -122,6 +172,43 @@
 																	$(".card-body").html(data);
 																	$(".card-body").hide();
 																	$(".card-body").fadeIn(250);
+
+																	$(".btnregister").on("click", function(e) {
+																		e.preventDefault();
+																		$.ajax({
+																			"url" : "./html/register2.html",
+																			"method" : "GET",
+																			"dataType" : "HTML",
+																			"success" : function(data) {
+																				$(".fullcontainer").html(data);
+																				$(".fullcontainer").hide();
+																				$(".fullcontainer").fadeIn(250);
+
+																				$(".saldo").on("click", function(e) {
+																					e.preventDefault();
+																					$.ajax({
+																						"url" : "./html/saldo.html",
+																						"method" : "GET",
+																						"dataType" : "HTML",
+																						"success" : function(data) {
+																							$(".profcontainer").html(data);
+																							$(".profcontainer").hide();
+																							$(".profcontainer").fadeIn(250);
+																							$(".misjuegos").removeClass("active");
+																							$(".saldo").addClass("active");
+																						}
+																					});
+																				});
+
+																				$(".btncontbuy").on("click", function(e) {
+																					e.preventDefault();
+																					$.ajax({
+																						"url" : "./html/"
+																					});
+																				});
+																			}
+																		});
+																	});
 																}
 															});
 														});
@@ -150,7 +237,7 @@
 					});
 				}
 			});
-		});	
+		});
 
 		$(".top5li").webkitAnimationPlayState = "paused";
 
@@ -274,6 +361,181 @@
 								$(".fullcontainer").html(data);
 								$(".fullcontainer").hide();
 								$(".fullcontainer").fadeIn(250);
+
+								$(".verjuego").on("click", function(e) {
+									e.preventDefault();
+									$.ajax({
+										"url" : "./html/verjuego.html",
+										"method" : "GET",
+										"dataType" : "HTML",
+										"success" : function(data) {
+											$(".fullcontainer").html(data);
+											$(".fullcontainer").hide();
+											$(".fullcontainer").fadeIn(250);
+
+											$(".top5li").webkitAnimationPlayState = "running";
+
+											$(".tobuy").on("click", function(e) {
+												e.preventDefault();
+												$.ajax({
+													"url" : "./html/compracl.html",
+													"method" : "GET",
+													"dataType" : "HTML",
+													"success" : function(data) {
+														$(".fullcontainer").html(data);
+														$(".fullcontainer").hide();
+														$(".fullcontainer").fadeIn(250);
+
+														$(".volver").on("click", function(e) {
+															e.preventDefault();
+															$.ajax({
+																"url" : "./html/verjuego.html",
+																"method" : "GET",
+																"dataType" : "HTML",
+																"success" : function(data) {
+																	$(".fullcontainer").html(data);
+																	$(".fullcontainer").hide();
+																	$(".fullcontainer").fadeIn(250);
+
+																	$(".tobuy").on("click", function(e) {
+																		e.preventDefault();
+																		$.ajax({
+																			"url" : "./html/compracl.html",
+																			"method" : "GET",
+																			"dataType" : "HTML",
+																			"success" : function(data) {
+																				$(".fullcontainer").html(data);
+																				$(".fullcontainer").hide();
+																				$(".fullcontainer").fadeIn(250);
+
+																				$(".btncontbuy").on("click", function(e) {
+																					e.preventDefault();
+																					$.ajax({
+																						"url" : "./html/compracl2.html",
+																						"method" : "GET",
+																						"dataType" : "HTML",
+																						"success" : function(data) {
+																							$(".fullcontainer").html(data);
+																							$(".fullcontainer").hide();
+																							$(".fullcontainer").fadeIn(250);
+																						}
+																					});
+																				});
+																			}
+																		});
+																	});
+																}
+															});
+														});
+
+														$(".btncontbuy").on("click", function(e) {
+															e.preventDefault();
+															$.ajax({
+																"url" : "./html/compracl2.html",
+																"method" : "GET",
+																"dataType" : "HTML",
+																"success" : function(data) {
+																	$(".fullcontainer").html(data);
+																	$(".fullcontainer").hide();
+																	$(".fullcontainer").fadeIn(250);
+
+																	$(".btnconfbuy").on("click", function(e) {
+																		e.preventDefault();
+																		$.ajax({
+																			"url" : "./html/fincompracl.html",
+																			"method" : "GET",
+																			"dataType" : "HTML",
+																			"success" : function(data) {
+																				$(".fullcontainer").html(data);
+																				$(".fullcontainer").hide();
+																				$(".fullcontainer").fadeIn(250);
+																				$(".toprofile, .toprofileav").on("click", function(e) {
+																					e.preventDefault();
+																					$.ajax({
+																						"url" : "./html/perfil.html",
+																						"method" : "GET",
+																						"dataType" : "HTML",
+																						"success" : function(data) {
+																							$(".fullcontainer").html(data);
+																							$(".fullcontainer").hide();
+																							$(".fullcontainer").fadeIn(250);
+																						}
+																					});
+																				});
+																			}
+																		});
+																	});
+																}
+															});
+														});
+													}
+												});
+											});
+
+											$(".tohome").on("click", function(e) {
+												e.preventDefault();
+												$.ajax({
+													"url" : "./html/home.html",
+													"method" : "GET",
+													"dataType" : "HTML",
+													"success" : function(data) {
+														$(".fullcontainer").html(data);
+														$(".fullcontainer").hide();
+														$(".fullcontainer").fadeIn(250);
+													}
+												});
+											});
+
+											$(".todescrip").on("click", function(e) {
+												e.preventDefault();
+												$.ajax({
+													"url" : "./html/descripcion.html",
+													"method" : "GET",
+													"dataType" : "HTML",
+													"success" : function(data) {
+														$(".bottomcontainer").html(data);
+														$(".bottomcontainer").hide();
+														$(".bottomcontainer").fadeIn(250);
+													}
+												});
+											});
+
+											$(".tohelp").on("click", function(e) {
+												e.preventDefault();
+												$.ajax({
+													"url" : "./html/ayuda.html",
+													"method" : "GET",
+													"dataType" : "HTML",
+													"success" : function(data) {
+														$(".bottomcontainer").html(data);
+														$(".bottomcontainer").hide();
+														$(".bottomcontainer").fadeIn(250);
+													}
+												});
+											});
+
+											$(".tocomment").on("click", function(e) {
+												e.preventDefault();
+												$.ajax({
+													"url" : "./html/comentarios.html",
+													"method" : "GET",
+													"dataType" : "HTML",
+													"success" : function(data) {
+														$(".bottomcontainer").html(data);
+														$(".bottomcontainer").hide();
+														$(".bottomcontainer").fadeIn(250);
+														let params = {
+									   						q: "Space Invaders",
+									    					count: 20
+									  					};
+									  					tweetsArray.length = 0;
+									  					searchTweets(params);
+													}
+												});
+											});
+										}
+									});
+								});
 							}
 						});
 					});

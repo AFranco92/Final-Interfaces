@@ -278,7 +278,7 @@ footer {
 	margin-top: -0.5%;
 	margin-left: 61.5%;
 }
-.btnconfbuy, .slbtnconfbuy {
+.btnconfbuy, .slbtnconfbuy, .btnconfbuysl {
 	width: 115px;
 	margin-top: -0.5%;
 	margin-left: 2.9%;	
@@ -903,4 +903,18 @@ h6 {
 }
 .colreg {
 	padding: 1%;
+}
+.btncontinuebuy {
+	float: right;
+}
+.monto {
+	font-size: 115%;
+	font-weight: bolder;
+}
+.infosaldo {
+	margin-top: 2%;
+}
+.cargartj, .cargarsl {
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
