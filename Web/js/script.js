@@ -196,6 +196,20 @@
 																							$(".profcontainer").fadeIn(250);
 																							$(".misjuegos").removeClass("active");
 																							$(".saldo").addClass("active");
+
+																							$(".cargartj").on("click", function(e) {
+																								e.preventDefault();
+																								$.ajax({
+																										"url" : "./html/cargartj.html",
+																										"method" : "GET",
+																										"dataType" : "HTML",
+																										"success" : function(data) {
+																											$(".profcontainer").html(data);
+																											$(".profcontainer").hide();
+																											$(".profcontainer").fadeIn(250);
+																										}
+																								});
+																							});
 																						}
 																					});
 																				});

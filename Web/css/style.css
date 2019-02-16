@@ -255,18 +255,29 @@ footer {
 	margin-left: 77.5%;
 }
 .buyform {
-	width: 300px;
+	width: 260px;
 }
 .buyformshort {
-	width: 145px;
+	width: 115px;
+}
+.formtj {
+	margin-top: -0.5%;
 }
 .tjdecr {
 	max-width: 65%;
-	margin-top: -73%;
-	margin-left: 42.3%;
+	margin-top: -78.5%;
+	margin-left: 39%;
 }
 .codseg {
 	margin-left: -62%;
+}
+.tittj {
+	margin-top: -2%;
+	margin-left: -110%;
+}
+.conftj {
+	margin-top: -23%;
+	margin-left: 63%;
 }
 .confvolver, .slconfvolver {
 	width: 115px;
@@ -814,7 +825,6 @@ a.account {
 	width: 121px;
 	margin: -11px 0 0 -10px;
 	text-decoration: none;
-	background: url(images/arrow.png) 80px 32px no-repeat;
 	cursor:pointer;
 }
 .root
