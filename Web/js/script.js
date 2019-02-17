@@ -200,14 +200,44 @@
 																							$(".cargartj").on("click", function(e) {
 																								e.preventDefault();
 																								$.ajax({
-																										"url" : "./html/cargartj.html",
-																										"method" : "GET",
-																										"dataType" : "HTML",
-																										"success" : function(data) {
-																											$(".profcontainer").html(data);
-																											$(".profcontainer").hide();
-																											$(".profcontainer").fadeIn(250);
-																										}
+																									"url" : "./html/cargartj.html",
+																									"method" : "GET",
+																									"dataType" : "HTML",
+																									"success" : function(data) {
+																										$(".profcontainer").html(data);
+																										$(".profcontainer").hide();
+																										$(".profcontainer").fadeIn(250);
+
+																										$(".conftj").on("click", function(e) {
+																											e.preventDefault();
+																											$.ajax({
+																												"url" : "./html/saldo.html",
+																												"method" : "GET",
+																												"dataType" : "HTML",
+																												"success" : function(data) {
+																													$(".profcontainer").html(data);
+																													$(".profcontainer").hide();
+																													$(".profcontainer").fadeIn(250);
+																													$(".cargarsl").removeClass("disabled");
+																													$(".smallinfo").html("Visa Electron");
+
+																													$(".cargarsl").on("click", function(e) {
+																														e.preventDefault();
+																														$.ajax({
+																															"url" : "./html/cargarsl.html",
+																															"method" : "GET",
+																															"dataType" : "HTML",
+																															"success" : function(data) {
+																																$(".profcontainer").html(data);
+																																$(".profcontainer").hide();
+																																$(".profcontainer").fadeIn(250);
+																															}
+																														});
+																													});
+																												}
+																											});
+																										});
+																									}
 																								});
 																							});
 																						}

@@ -265,7 +265,7 @@ footer {
 }
 .tjdecr {
 	max-width: 65%;
-	margin-top: -78.5%;
+	margin-top: -70%;
 	margin-left: 39%;
 }
 .codseg {
@@ -276,8 +276,16 @@ footer {
 	margin-left: -110%;
 }
 .conftj {
-	margin-top: -23%;
-	margin-left: 63%;
+	margin-top: 5%;
+	margin-left: -83%;
+}
+.cargasaldo {
+	max-width: 75%;
+	margin-left: 12%;
+}
+.confsaldo {
+	margin-top: 23%;
+	margin-left: -10%;
 }
 .confvolver, .slconfvolver {
 	width: 115px;
